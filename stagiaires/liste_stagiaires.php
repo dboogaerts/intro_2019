@@ -1,3 +1,4 @@
+<?php
 $stagiaires = [
     [
         "nom" => "Boogaerts", 
@@ -30,6 +31,46 @@ $stagiaires = [
         "sexe" => "F",
         "enfants" => 5,
         "hobbies" => ["GUI", "JDR", "PGM"] 
+    ],
+    [
+        "nom" => "Carion", 
+        "prenom" => "Stéphan", 
+        "ddn" => "13/07/1986",
+        "sexe" => "M",
+        "enfants" => 0,
+        "hobbies" => ["PGM","PSM"] 
+    ],
+    [
+        "nom" => "Waroux", 
+        "prenom" => "Lucas", 
+        "ddn" => "13/11/1994",
+        "sexe" => "M",
+        "enfants" => 0,
+        "hobbies" => ["GAG", "TMA", "EDC"] 
+    ],
+    [
+        "nom" => "Kilesse", 
+        "prenom" => "Alysson", 
+        "ddn" => "11/09/1999",
+        "sexe" => "F",
+        "enfants" => 0,
+        "hobbies" => ["GAM", "MUS", "PGM"] 
+    ],
+    [
+        "nom" => "Piccoli", 
+        "prenom" => "Raphaël", 
+        "ddn" => "11/08/1996",
+        "sexe" => "M",
+        "enfants" => 0,
+        "hobbies" => ["GAM", "TEC", "SOR"] 
+    ],
+    [
+        "nom" => "STRYKERS",
+        "prenom" => "Simon",
+        "ddn" => "28/10/19997",
+        "sexe" => "M",
+        "enfants" => 0,
+        "hobbies" => ["JDR", "CHT", "PGM", "MNG", "VID", "PIA", "GAM", "DNS"]
     ]
 ];
 
@@ -44,5 +85,15 @@ $hobbies = [
     "PIA" => "Piano",  
     "CHT" => "Chant",
     "GUI" => "Guitare",  
-    "JDR" => "Jeu de rôle",  
+    "JDR" => "Jeu de rôle",
+    "PSM" => "Plongée-sous-Marine",
+    "TMA" => "Taper Mes Amis",  
+    "EDC" => "Exploiter Des Chinois",
+    "GAG" => "Gagner",
+    "GAM" => "Jeux vidéo",
+    "MUS" => "Musique",
+    "TEC" => "Technologie",
+    "SOR" => "Sortie entre amis",
+    "PIA" => "Piano",  
+    "DNS" => "Danse"
 ];
