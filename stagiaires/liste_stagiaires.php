@@ -71,6 +71,14 @@ $stagiaires = [
         "sexe" => "M",
         "enfants" => 0,
         "hobbies" => ["JDR", "CHT", "PGM", "MNG", "VID", "PIA", "GAM", "DNS"]
+    ],
+    [
+        "nom" => "Lecocq", 
+        "prenom" => "Alexandre", 
+        "ddn" => "30/05/1996",
+        "sexe" => "M",
+        "enfants" => 0,
+        "hobbies" => ["VID", "JEU", "SER","CRI"] 
     ]
 ];
 
@@ -95,5 +103,8 @@ $hobbies = [
     "TEC" => "Technologie",
     "SOR" => "Sortie entre amis",
     "PIA" => "Piano",  
-    "DNS" => "Danse"
+    "DNS" => "Danse", 
+    "CRI" => "Crier",
+    "SER" => "Series", 
+
 ];
