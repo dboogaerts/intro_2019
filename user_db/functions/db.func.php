@@ -20,9 +20,9 @@ function connectDB(): PDO{
 /**
  * return an array of all users in DB 
  */
-function getAllUsers(PDO $connexion){ 
+function getAllUsers(PDO $connexion, string $orderBy = ""){ 
     $stagiaires = [];
-    $sql = "SELECT * FROM USER";
+    $sql = "SELECT * FROM USER $orderBy";
     $stmt = $connexion -> prepare($sql);
 
     //3. Exécution de la requête
