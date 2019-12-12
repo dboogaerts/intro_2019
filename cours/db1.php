@@ -30,7 +30,9 @@
                 <td>Genre</td> 
             </tr>
             <?php
-            while ($row = $stmt -> fetch(PDO::FETCH_ASSOC)){
+            // while ($row = $stmt -> fetch(PDO::FETCH_ASSOC)){
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            foreach($stmt as $row) {
                 $date = new DateTime($row["use_ddn"]);
                 $date = $date -> format("d/m/Y");
               echo "
