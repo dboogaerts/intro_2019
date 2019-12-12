@@ -18,12 +18,11 @@
         </tr>
         <?php
         foreach ($stagiaires as $stagiaire) {
-            $date = $date->format("d/m/Y");
             echo "
               <tr>
                 <td>{$stagiaire["use_nom"]}</td>
                 <td>{$stagiaire["use_prenom"]}</td>
-                <td>" . $date . "</td>
+                <td>" . $stagiaire["use_ddn"] . "</td>
                 <td>" . (($stagiaire["use_sexe"]) ? "Masculin" : "Feminin") . "</td>
             </tr>";
         }
