@@ -46,7 +46,7 @@ function insertUser(PDO $connexion, string $firstName, string $lastName, string 
         :prenom,
         :ddn,
         :sexe,
-        md5(:mdp)";
+        md5(:mdp))";
     $stmt = $connexion -> prepare($sql);
     $stmt -> bindParam('nom', $lastName);
     $stmt -> bindParam('prenom', $firstName);

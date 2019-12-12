@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="user.php" action="POST">
+    <form action="user.php" method="POST">
     <table>
         <tr>
             <td>Nom</td>
@@ -42,10 +42,8 @@
             </select></td>
             <td><input type="password" name="pwd"></td>
             <td><input type="submit" name="action" value="Ajouter"></td>
-
         </tr>
     </table>
     </form>
 </body>
-
 </html>
