@@ -39,5 +39,19 @@ function getAllUsers(PDO $connexion){
 /**
  * insert a user in DB
  */
-function insertUser(string $firstName, string $lastName, string $ddn, int $genre, string $mdp)
-{ }
+function insertUser(PDO $connexion, string $firstName, string $lastName, string $ddn, int $genre, string $mdp){
+    $sql = "insert into user values (
+        default, 
+        :nom,
+        :prenom,
+        :ddn,
+        :sexe,
+        md5(:mdp)";
+    $stmt = $connexion -> prepare($sql);
+    $stmt -> bindParam('nom', $lastName);
+    $stmt -> bindParam('prenom', $firstName);
+    $stmt -> bindParam('ddn', $ddn);
+    $stmt -> bindParam('sexe', $genre);
+    $stmt -> bindParam('mdp', $mdp);
+    $stmt -> execute();
+}
