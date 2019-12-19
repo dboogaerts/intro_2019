@@ -26,7 +26,8 @@ function getHomeProducts(){
     $.get('produits.php', (data)=> {
         $('.title').text('Tshirt Récents')
         $(data.first).each((index,img)=>{
-            $('.content>.pageContent').append(createThumb(img));
+          console.log('tee');
+            $('.content_home>.pageContent').append(createThumb(img));
         })
     });
 }
